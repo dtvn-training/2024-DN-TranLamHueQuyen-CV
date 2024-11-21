@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: #f0f0f0; 
+    min-height: 100vh;       
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: auto;
+    border: 1px solid #d6d0d0;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    background-color: #eae8e8;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 10px;
+    height: auto;
+    border-radius: 100px 20px 20px 20px;
+}
+
+.sidebar {
+    width: 30%;
+    border-radius: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #eae8e8;
+    justify-content: space-between;
+}
+
+.non-sidebar {
+    height: 19%;
+}
+
+.sub-title-sidebar {
+    color: rgb(34, 101, 133);
+    font-size: 20px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    color: rgb(34, 101, 133);
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.sidebar p, .sidebar ul {
+    color: #555;
+    margin-top: 10px;
+}
+
+.sidebar ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.sidebar a {
+    color: #555;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 70%;
+    border-radius: 90px 0 0 0;
+    background-color: #eae8e8; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.non {
+    height: 30px;
+    background-color: #eae8e8;
+    width: 100%;
+}
+
+.info-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 22vh;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 100px 0 0 0; 
+    flex: 0 0 auto;
+}
+
+.info-content h1, .info-content h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 10px; 
+}
+
+.info-content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.info-content h2 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .cv-container {
+        flex-direction: column; 
+        width: 100%;
+    }
+    .sidebar, .main-content {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.main-content h3 {
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box; 
+    overflow: hidden; 
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.item-info {
+    color: #333;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(34, 101, 133);
+    margin-bottom: 5px;
+}
+
+.main-content h4 {
+    color: #555;
+    margin-top: 10px;
+}
+
+.main-content p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.main-content .experience, .main-content .project {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.main-content {
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.experience, .project {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    flex: 0 0 auto; 
+    display: block; 
+    background-color: #fff;
+    border-radius: 5px; 
+}
+
+.experience p, .project p {
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+.education {
+    margin-top: 20px;
+}
